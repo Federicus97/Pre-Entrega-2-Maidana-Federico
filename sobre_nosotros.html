@@ -5,54 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
-    <link rel="stylesheet" href="./style.css">
+     <!-- ICONO -->
+     <link rel="icon" type="image/jpg" href='./assets/img/Hotel Lorem.png'>
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body class="body_all">
-    <header class="barraNavegable">
-        <nav>
-            <ul>
-                <li class="linav"><a href="./index.html" class="textoLink">Inicio</a></li>
-                <li class="linav"><a href="./habitaciones.html" class="textoLink">Habitaciones</a></li>
-                <li class="linav"><a href="./reserva.html" class="textoLink">Reserva</a></li>
-                <li class="linav"><a href="./sobre_nosotros.html" class="textoLink">Sobre Nosotros</a></li>
-                <li class="linav"><a href="./clientes.html" class="textoLink">Clientes</a></li>
-            </ul>
-        </nav>
-    </header> 
-        <section class="sectionHistoria sectionBordo">
-            <h1 class="textoLink text_h1">Sobre Nosotros</h1>
-            <p>Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus provident eaque culpa unde necessitatibus deserunt repellat cumque tempore dolore adipisci sit est nisi, ex facere, nulla vel! Impedit, laborum.
-            Culpa modi eius dolorum dolorem deleniti fugiat maiores eos, a suscipit corporis reprehenderit quos ratione neque distinctio tenetur perspiciatis nesciunt! Delectus esse voluptatem sint. Cum a dolorem quae distinctio nesciunt.
-            Tenetur mollitia voluptatibus accusamus voluptatem error eveniet adipisci, perferendis earum aliquid soluta sint totam quas. Necessitatibus rem possimus nobis beatae quibusdam, dolorum tempora sapiente ipsam incidunt cum atque distinctio perspiciatis!
-            Expedita omnis porro ducimus, explicabo alias eaque maxime ipsum sint asperiores dolores, a unde minima voluptatibus cum, dicta perspiciatis. Exercitationem perferendis, autem fugit laboriosam adipisci facere optio veniam omnis soluta.
-            Omnis sapiente nemo fuga, ipsa vel aliquam adipisci laudantium eveniet. Eligendi nam expedita, animi voluptate voluptates delectus assumenda ratione atque quasi ut corrupti cupiditate soluta, amet eveniet quod fugit itaque. consectetur adipisicing elit. Repellat, laboriosam porro earum distinctio, sequi blanditiis voluptatum unde, labore natus dolorem animi quos. Quia nam dolorum est aut ad, quos ullam.
-            Magni sapiente eum neque dignissimos rerum natus quasi nesciunt, qui modi illo placeat dolor, quod ab nobis culpa! Earum obcaecati molestiae inventore, quisquam exercitationem ratione nemo adipisci optio esse dolor!
-            Assumenda voluptates eius odio praesentium ducimus nobis recusandae earum itaque natus? Animi necessitatibus repudiandae voluptatem reprehenderit corporis et distinctio doloremque minus nemo ducimus. Qui eos fugiat hic quasi, optio ab.
-            Iusto, voluptas voluptatibus aperiam nemo laboriosam repellat doloribus sunt perspiciatis error fugit, voluptate sequi est vitae, rerum sit reprehenderit at unde accusantium ipsa pariatur et? Voluptatum at sapiente corrupti nisi.
-            Mollitia deleniti non dicta aliquam error repudiandae eos dolorum amet sunt libero iste doloribus optio tempore excepturi, rerum dolore quaerat! Ipsa molestias rerum esse laboriosam dolorum quibusdam, error natus quam!</p>
+    <header class="barraNavegable container-fluid body_all border border-dark sticky-top">
+        <!--Barra Navegable boostrap--> 
+        <nav class="navbar navbar-expand-lg">
+           <div class="container-fluid">
+               <!-- La palabra 'Hotel Lorem desaparece en Desktop' -->
+             <a class="navbar-brand link-light d-lg-none" href="./index.html">Hotel Lorem</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-auto">
+                 <li class="mx-auto nav-item ">
+                   <a class="nav-link active link-light" aria-current="Hotel Lorem" href="./index.html">Inicio</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./habitaciones.html">Habitaciones</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./reserva.html">Reserva</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./sobre_nosotros.html">Sobre Nosotros</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./clientes.html">Clientes</a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+   </header>
 
+<!-- Historia ficticia del Hotel -->
+      <main>
+        <section class="sectionBordo">
+          <h1 class="text-Blanco">Sobre Nosotros</h1>
+          <p class="text-Blanco">Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus provident eaque culpa unde necessitatibus deserunt repellat cumque tempore dolore adipisci sit est nisi, ex facere, nulla vel! Impedit, laborum.
+          Culpa modi eius dolorum dolorem deleniti fugiat maiores eos, a suscipit corporis reprehenderit quos ratione neque distinctio tenetur perspiciatis nesciunt! Delectus esse voluptatem sint. Cum a dolorem quae distinctio nesciunt.
+          Tenetur mollitia voluptatibus accusamus voluptatem error eveniet adipisci, perferendis earum aliquid soluta sint totam quas. Necessitatibus rem possimus nobis beatae quibusdam, dolorum tempora sapiente ipsam incidunt cum atque distinctio perspiciatis!
+          Expedita omnis porro ducimus, explicabo alias eaque maxime ipsum sint asperiores dolores, a unde minima voluptatibus cum, dicta perspiciatis. Exercitationem perferendis, autem fugit laboriosam adipisci facere optio veniam omnis soluta.
+          Omnis sapiente nemo fuga, ipsa vel aliquam adipisci laudantium eveniet. Eligendi nam expedita, animi voluptate voluptates delectus assumenda ratione atque quasi ut corrupti cupiditate soluta, amet eveniet quod fugit itaque. consectetur adipisicing elit. Repellat, laboriosam porro earum distinctio, sequi blanditiis voluptatum unde, labore natus dolorem animi quos. Quia nam dolorum est aut ad, quos ullam.
+          Magni sapiente eum neque dignissimos rerum natus quasi nesciunt, qui modi illo placeat dolor, quod ab nobis culpa! Earum obcaecati molestiae inventore, quisquam exercitationem ratione nemo adipisci optio esse dolor!
+          Assumenda voluptates eius odio praesentium ducimus nobis recusandae earum itaque natus? Animi necessitatibus repudiandae voluptatem reprehenderit corporis et distinctio doloremque minus nemo ducimus. Qui eos fugiat hic quasi, optio ab.
+          Iusto, voluptas voluptatibus aperiam nemo laboriosam repellat doloribus sunt perspiciatis error fugit, voluptate sequi est vitae, rerum sit reprehenderit at unde accusantium ipsa pariatur et? Voluptatum at sapiente corrupti nisi.
+          Mollitia deleniti non dicta aliquam error repudiandae eos dolorum amet sunt libero iste doloribus optio tempore excepturi, rerum dolore quaerat! Ipsa molestias rerum esse laboriosam dolorum quibusdam, error natus quam!</p>
         </section>
-        <footer class="footerlist">
-            <div class="redes">
-                <ul class="ulfooter">
-                    <li class="lifooter"><a class="afooter" href="http://www.facebook.com">Facebook</a></li>
-                    <li class="lifooter"><a class="afooter" href="http://www.youtube.com">Youtube</a></li>
-                    <li class="lifooter"><a class="afooter" href="http://www.twitter.com">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="telefonos">
-                <ul class="ulfooter">
-                    <li class="lifooter">0800-00223344</li>
-                    <li class="lifooter">0800-00223344</li>
-                    <li class="lifooter">0800-00223344</li>
-                </ul>
-            </div>
-            <div class='ubicacion'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7208.00948202065!2d-57.29137883804172!3d-25.404651897728943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945c4aa1ae132d69%3A0x8244fddd63bf9733!2sIglesia%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs%2C%20Ypacara%C3%AD%20Central!5e0!3m2!1ses-419!2sar!4v1666237538853!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </footer>
+<!-- Imagen del Hotel Lorem -->
+        <div class="container-fluid card text-bg-dark">
+          <img src="./assets/img/Hotel Lorem.jpg" class="card-img" alt="Hotel Lorem">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Hotel Lorem</h5>
+            <p class="card-text">Esta es una foto del Hotel Lorem, ubicado en pleno centro del mundo.</p>
+            <p class="card-text"><small>Subido el dia 07 de noviembre del 2022</small></p>
+          </div>
+        </div>
+
+      </main>  
+
+      <!-- FOOTER -->
+
+  <footer class="row justify-content-around col-12 mx-0 body_all">
+    <div class="col-10 col-md-5 col-lg-2 footer__titulo d-none d-md-block d-lg-block">
+        <h4 class="text-light h1">Hotel Lorem</h4>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Soporte</h4>
+        <ul class="footer__lista p-0 m-0">
+            <li class="footer__lista-item">Terminos de servicio</li>
+            <li class="footer__lista-item">Condiciones de uso</li>
+            <li class="footer__lista-item">Politica de privacidad</li>
+            <li class="footer__lista-item">Centro de ayuda</li>
+            <li class="footer__lista-item">Status</li>
+        </ul>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Redes</h4>
+        <ul class="footer__lista  p-0 m-0">
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="./assets/img/Logo Instagram.png" ALIGN=MIDDLE><span>Instagram</span></li>
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="./assets/img/Logo Facebook.png" ALIGN=MIDDLE><span>Facebook</span></li>
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="./assets/img/Logo Twitter.png" ALIGN=MIDDLE><span>Twitter</span></li>
+        </ul>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Compañia</h4>
+        <ul class="footer__lista  p-0 m-0">
+            <li class="footer__lista-item">Inicio</li>
+            <li class="footer__lista-item">Sobre Nosotros</li>
+            <li class="footer__lista-item">Preguntas frecuentes</li>
+            <li class="footer__lista-item">Contacto</li>
+            <li class="footer__lista-item">Habitaciones</li>
+        </ul>
+    </div>
+    <!-- JAVA SCRIP BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</footer>
 </body>
 </html>

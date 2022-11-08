@@ -5,69 +5,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitaciones</title>
-    <link rel="stylesheet" href="./style.css">
+     <!-- ICONO -->
+     <link rel="icon" type="image/jpg" href='./assets/img/Hotel Lorem.png'>
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body class="body_all">
-    <header class="barraNavegable">
-        <nav>
-            <ul>
-                <li class="linav"><a href="./index.html" class="textoLink">Inicio</a></li>
-                <li class="linav"><a href="./habitaciones.html" class="textoLink">Habitaciones</a></li>
-                <li class="linav"><a href="./reserva.html" class="textoLink">Reserva</a></li>
-                <li class="linav"><a href="./sobre_nosotros.html" class="textoLink">Sobre Nosotros</a></li>
-                <li class="linav"><a href="./clientes.html" class="textoLink">Clientes</a></li>
-            </ul>
-        </nav>
-    </header> 
-    <section class="sectionBordo"><h1 class="textoLink text_h1">
-        Habitaciones
-    </h1>
-    <p>Estos son algunas de las habitaciones que tenemos actualmente en el hotel</p>
-    </section>
-    <Section id="fotosHab">
-        <div class="habitaciones">
-            <div>  
-                <h4 class="textoLink text_h1">Doble Twin Standard</h4>
-                <img src="/imagen/DobleTwinStandard.gif" alt="habitacion doble">
-            </div>
-            <div>  
-                <h4 class="textoLink text_h1">Doble Matrimonial Standard</h4>
-                <img src="/imagen/DobleMatrimonialStandard.gif" alt="habitacion doble">
-            </div> 
+  <header class="container-fluid body_all border border-dark sticky-top">
+        <!--Barra Navegable boostrap--> 
+        <nav class="navbar navbar-expand-lg">
+           <div class="container-fluid">
+               <!-- La palabra 'Hotel Lorem desaparece en Desktop' -->
+             <a class="navbar-brand link-light d-lg-none" href="./index.html">Hotel Lorem</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-auto">
+                 <li class="mx-auto nav-item ">
+                   <a class="nav-link active link-light" aria-current="Hotel Lorem" href="./index.html">Inicio</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./habitaciones.html">Habitaciones</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./reserva.html">Reserva</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./sobre_nosotros.html">Sobre Nosotros</a>
+                 </li>
+                 <li class="mx-auto nav-item">
+                   <a class="nav-link link-light" href="./clientes.html">Clientes</a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+  </header>
+
+  <main>
+
+    <!-- Seccion de Color Bordo 1 Doble Twin Standard -->
+    <div class="sectionBordo mx-auto mb-3 container-fluid">
+      <h1 class="h1 text-light text-center">Habitaciones</h1>
+      <h2 class="h2 text-light text-center mt-5">Doble Twin Standard</h2>
+      <p class="text-light text-center">Las habitaciones doble twin estándar ofrecen el espacio de 19 metros cuadrados, ideal para brindar la máxima comodidad en un ambiente cálido y moderno. 
+        Están especialmente amuebladas para viajes de negocios o placer con dos camas de 0.90 metros por 1.90 metros, escritorio, TV LCD 32” con cable, frigobar y caja de seguridad.
+         Además cuentan con un set para infusiones con pava eléctrica, tazas y sobres de cortesía que se renuevan todos los días. Cantidad: 20 habitaciones.
+        </p>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img src="./assets/img/DobleTwinStandard.gif" class="d-block w-100" alt="Habitacion doble twin standard Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/DobleTwinStandard2.gif" class="d-block w-100" alt="Habitacion doble twin standard Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/DobleTwinStandard3.gif" class="d-block w-100" alt="Habitacion doble twin standard Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/DobleTwinStandard4.gif" class="d-block w-100" alt="Habitacion doble twin standard Hotel Lorem">
+          </div>
         </div>
-        <div class="habitaciones2">
-            <div>  
-                <h4 class="textoLink text_h1">Triple Twin Standard</h4>
-                <img src="/imagen/TripleTwinstandard.jpg" alt="habitacion doble">
-            </div>
-            <div>  
-                <h4 class="textoLink text_h1">Suite Amerian</h4>
-                <img src="/imagen/Suite Amerian.gif" alt="habitacion doble">
-            </div> 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <!-- Boton de Reserva Ahora -->
+       <a class="btn btn_gris text-light" href="./reserva.html" role="button">Reserva Ahora</a>
+      
+      
+    </div>
+    <!-- Seccionde Color Gris 1 Doble Matrimonial Standard -->
+    <div class="body_all mx-auto mb-3 container-fluid">
+      <h2 class="h2 text-light text-center mt-5">Doble Matrimonial Standard</h2>
+      <p class="text-light text-center">Las habitaciones doble matrimonial estándar ofrecen el espacio de 19 metros cuadrados, ideal para brindar la máxima comodidad en un ambiente cálido y moderno.
+        Están especialmente amuebladas para viajes de negocios o placer con cama de 1.80 metros por 1.90 metros, escritorio, TV LCD 32” con cable, frigobar y caja de seguridad.
+        Además cuentan con un set para infusiones con pava eléctrica, tazas y sobres de cortesía que se renuevan todos los días. Cantidad: 16 habitaciones.
+        </p>
+      <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img src="./assets/img/DobleMatrimonialStandard.gif" class="d-block w-100" alt="Habitacion doble Matrimonial standard Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/DobleMatrimonialStandard2.gif" class="d-block w-100" alt="Habitacion doble Matrimonial standard Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/DobleMatrimonialStandard3.gif" class="d-block w-100" alt="Habitacion doble Matrimonial standard Hotel Lorem">
+          </div>
         </div>
-        
-    </Section>
-    <footer class="footerlist">
-        <div class="redes">
-            <ul class="ulfooter">
-                <li class="lifooter"><a class="afooter" href="http://www.facebook.com">Facebook</a></li>
-                <li class="lifooter"><a class="afooter" href="http://www.youtube.com">Youtube</a></li>
-                <li class="lifooter"><a class="afooter" href="http://www.twitter.com">Twitter</a></li>
-            </ul>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <!-- Boton de Reserva Ahora -->
+       <a class="btn btn_bordo text-light" href="./reserva.html" role="button">Reserva Ahora</a>
+    </div>
+    <!-- Seccion de Color Bordo 2 Doble Twin Standard -->
+    <div class="sectionBordo mx-auto mb-3 container-fluid">
+      <h2 class="h2 text-light text-center mt-5">Suite Twin</h2>
+      <p class="text-light text-center">Las Suites twin cuentan con 30 metros cuadrados y con mobiliario especialmente diseñado para distribuir la habitación en dos cómodos ambientes. 
+        Poseen sillón de dos cuerpos y mesa ratona, dos camas de 0.90 metro por 1.90 metros, juego de living y cocina equipada con microondas, pava eléctrica, barra desayunador y vajilla completa. 
+        Cuentan con un TV LCD de 32” pulgadas con la posibilidad de verlo desde la habitación como desde la sala de estar. 
+        Todas las suites incluyen climatización, frigobar, caja de seguridad e infusiones de cortesía que se renuevan todos los días. Cantidad: 17 habitaciones.
+        </p>
+      <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img src="./assets/img/suite twin.jpg" class="d-block w-100" alt="Habitacion Suite Twin Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/suite twin 2.jpg" class="d-block w-100" alt="Habitacion Suite Twin Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/suite twin 3.jpg" class="d-block w-100" alt="Habitacion Suite Twin Hotel Lorem">
+          </div>
         </div>
-        <div class="telefonos">
-            <ul class="ulfooter">
-                <li class="lifooter">0800-00223344</li>
-                <li class="lifooter">0800-00223344</li>
-                <li class="lifooter">0800-00223344</li>
-            </ul>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <!-- Boton de Reserva Ahora -->
+       <a class="btn btn_gris text-light" href="./reserva.html" role="button">Reserva Ahora</a>
+      
+      
+    </div>
+    <!-- Seccionde Color Gris 1 Doble Matrimonial Standard -->
+    <div class="body_all mx-auto mb-3 container-fluid lastdivhab">
+      <h2 class="h2 text-light text-center mt-5">Suite Matrimonial</h2>
+      <p class="text-light text-center">Las Suites matrimonial cuentan con 30 metros cuadrados y mobiliario especialmente diseñado para distribuir la habitación en dos cómodos ambientes. 
+        Poseen cama matrimonial de 1.80 metros por 1.90 metros, juego de living y cocina equipada con microondas, pava eléctrica, barra desayunador y vajilla completa. 
+        Cuentan con un TV LCD de 32” pulgadas con la posibilidad de verlo desde la habitación como desde la sala de estar. Todas las suites incluyen climatización, frigobar, caja de seguridad e infusiones de cortesía que se renuevan todos los días. 
+        Cantidad: 18 habitaciones.
+        *Habitaciones adaptadas para personas con movilidad reducida.
+        *Habitaciones triples disponibles.
+        </p>
+      <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img src="./assets/img/suite matrimonial.jpg" class="d-block w-100" alt="Habitacion Suite Matrimonial Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/suite matrimonial2.jpg" class="d-block w-100" alt="Habitacion Suite Matrimonial Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/suite matrimonial3.jpg" class="d-block w-100" alt="Habitacion Suite Matrimonial Hotel Lorem">
+          </div>
+          <div class="carousel-item mb-3">
+            <img src="./assets/img/suite matrimonial4.jpg" class="d-block w-100" alt="Habitacion Suite Matrimonial Hotel Lorem">
+          </div>
         </div>
-        <div class='ubicacion'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7208.00948202065!2d-57.29137883804172!3d-25.404651897728943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945c4aa1ae132d69%3A0x8244fddd63bf9733!2sIglesia%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs%2C%20Ypacara%C3%AD%20Central!5e0!3m2!1ses-419!2sar!4v1666237538853!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </footer>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <!-- Boton de Reserva Ahora -->
+       <a class="btn btn_bordo text-light" href="./reserva.html" role="button">Reserva Ahora</a>
+    </div>
+  </main>
+
+<!-- FOOTER -->
+
+  <footer class="row justify-content-around col-12 mx-0 body_all">
+    <div class="col-10 col-md-5 col-lg-2 footer__titulo d-none d-md-block d-lg-block">
+        <h4 class="text-light h1">Hotel Lorem</h4>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Soporte</h4>
+        <ul class="footer__lista p-0 m-0">
+            <li class="footer__lista-item">Terminos de servicio</li>
+            <li class="footer__lista-item">Condiciones de uso</li>
+            <li class="footer__lista-item">Politica de privacidad</li>
+            <li class="footer__lista-item">Centro de ayuda</li>
+            <li class="footer__lista-item">Status</li>
+        </ul>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Redes</h4>
+        <ul class="footer__lista  p-0 m-0">
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="./assets/img/Logo Instagram.png" ALIGN=MIDDLE><span>Instagram</span></li>
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="./assets/img/Logo Facebook.png" ALIGN=MIDDLE><span>Facebook</span></li>
+            <li class="footer__lista-item"><IMG class='img-footer' SRC="./assets/img/Logo Twitter.png" ALIGN=MIDDLE><span>Twitter</span></li>
+        </ul>
+    </div>
+    <div class="col-10 col-md-5 col-lg-2 footer_divs">
+        <h4 class="text-light h2">Compañia</h4>
+        <ul class="footer__lista  p-0 m-0">
+            <li class="footer__lista-item">Inicio</li>
+            <li class="footer__lista-item">Sobre Nosotros</li>
+            <li class="footer__lista-item">Preguntas frecuentes</li>
+            <li class="footer__lista-item">Contacto</li>
+            <li class="footer__lista-item">Habitaciones</li>
+        </ul>
+    </div>
+    <!-- JAVA SCRIP BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</footer>
+  
 </body>
 </html>
